@@ -6,65 +6,73 @@
     <link rel="stylesheet" href="style.css" type="text/css">
   </head>
   <body>
-<h1 id="barber">Barber</h1>
-<p>Barber is a macOS menu bar application that lets you create menu bar
-icons on the fly. You can display an icon or text in the menu bar,
-assign an action to it, either trigger a link or open a menu. You can
-display some important text or use it as a launcher.</p>
-<h2 id="getting-started">Getting Started</h2>
-<h3 id="add-a-menu-bar-item">Add a menu bar item</h3>
-<p><img src="images/add_bar_item.png" alt="Add bar item" width="744"/></p>
-<p>In the design window, click on the empty space of the menu bar, a
-popover will appear asking for information needed for a bar item.</p>
-<ul>
-<li>Text field: this is what will be rendered on the menu bar. You can
-add text, emoji, or choose an icon by clicking the smile icon on the
-right.</li>
-<li>Action field: You can set the click behavior of the bar item.
-<ul>
-<li>Open app: Click on the empty space of the field, and select an
-application you want to open when the bar item is clicked.</li>
-<li>URL Scheme: You can attach a link to the bar item.</li>
-</ul></li>
-<li>Key: can be used to find this item in Shortcuts app. See <a
-href="#advanced-usage">Advanced Usage</a> for more.</li>
-</ul>
-<p>After that, the newly created bar item will appear in the design
-window, and also in the system menu bar. By clicking on the bar item in
-the design window, you can choose to modify or remove it.</p>
-<h3 id="add-menus">Add menus</h3>
-<p>Usually, a menu bar icon is used to display a menu of options. You
-can also customize the menu under a bar item.</p>
-<p><img src="images/add_menu_item.png" alt="Add menu item" width="473"/></p>
-<p>In the design window, click the bar item you just created. Select
-“Add menu under”, a smiliar popover will appear, asking for the text and
-action for the menu item.</p>
-<p><img src="images/add_menu_item_form.png" alt="Add menu item (form)" width="472"/></p>
-<p>After that, when you click the bar item again, the menu item you just
-created will show up. By clicking on the menu item, you can modify or
-remove the item.</p>
-<p>Note: If you create menus for a bar item, the action of the bar item
-won’t be triggered when it is clicked.</p>
-<h2 id="settings">Settings</h2>
-<p>After you finish setting up Barber in the design window, you may want
-Barber to run all the time and launch silently.</p>
-<p>You can customize Barber’s behavior in the settings window:</p>
-<ul>
-<li>Launch automatically on login</li>
-<li>Show settings on launch</li>
-</ul>
-<p>If you uncheck the second box, Barber will run silently in the
-background. If you need to open the design window again, simply launch
-Barber from the Applications (e.g. Launchpad or Finder).</p>
-<h2 id="advanced-usage">Advanced usage</h2>
-<p>The icons and menus you create with Barber can be controlled with
-Shortcuts app in macOS. You can compose your own Shortcuts flow with it
-and other apps.</p>
-<p>For example, you can display information from Weather app in the menu
-bar:</p>
-<p><img src="images/shortcuts.png" alt="Add menu item (form)" width="1029"/></p>
-<p>You can use the <strong>key</strong> to find item you’d like to
-change in Barber’s Shortcuts scripting command as the screenshot
-above.</p>
+    <div id="app">
+      <h1 id="barber">Barber</h1>
+      <p>Barber is a macOS menu bar application that lets you create
+      menu bar icons on the fly. You can display an icon or text in the
+      menu bar, assign an action to it, either trigger a link or open a
+      menu. You can display some important text or use it as a
+      launcher.</p>
+      <h2 id="getting-started">Getting Started</h2>
+      <h3 id="add-a-menu-bar-item">Add a menu bar item</h3>
+      <p><img src="images/add_bar_item.png" alt="Add bar item" width="744"/></p>
+      <p>In the design window, click on the empty space of the menu bar,
+      a popover will appear asking for information needed for a bar
+      item.</p>
+      <ul>
+      <li>Text field: this is what will be rendered on the menu bar. You
+      can add text, emoji, or choose an icon by clicking the smile icon
+      on the right.</li>
+      <li>Action field: You can set the click behavior of the bar item.
+      <ul>
+      <li>Open app: Click on the empty space of the field, and select an
+      application you want to open when the bar item is clicked.</li>
+      <li>URL Scheme: You can attach a link to the bar item.</li>
+      </ul></li>
+      <li>Key: can be used to find this item in Shortcuts app. See <a
+      href="#advanced-usage">Advanced Usage</a> for more.</li>
+      </ul>
+      <p>After that, the newly created bar item will appear in the
+      design window, and also in the system menu bar. By clicking on the
+      bar item in the design window, you can choose to modify or remove
+      it.</p>
+      <h3 id="add-menus">Add menus</h3>
+      <p>Usually, a menu bar icon is used to display a menu of options.
+      You can also customize the menu under a bar item.</p>
+      <p><img src="images/add_menu_item.png" alt="Add menu item" width="473"/></p>
+      <p>In the design window, click the bar item you just created.
+      Select “Add menu under”, a smiliar popover will appear, asking for
+      the text and action for the menu item.</p>
+      <p><img src="images/add_menu_item_form.png" alt="Add menu item (form)" width="472"/></p>
+      <p>After that, when you click the bar item again, the menu item
+      you just created will show up. By clicking on the menu item, you
+      can modify or remove the item.</p>
+      <p>Note: If you create menus for a bar item, the action of the bar
+      item won’t be triggered when it is clicked.</p>
+      <h2 id="settings">Settings</h2>
+      <p>After you finish setting up Barber in the design window, you
+      may want Barber to run all the time and launch silently.</p>
+      <p>You can customize Barber’s behavior in the settings window:</p>
+      <ul>
+      <li>Launch automatically on login</li>
+      <li>Show settings on launch</li>
+      </ul>
+      <p>If you uncheck the second box, Barber will run silently in the
+      background. If you need to open the design window again, simply
+      launch Barber from the Applications (e.g. Launchpad or
+      Finder).</p>
+      <h2 id="advanced-usage">Advanced usage</h2>
+      <p>The icons and menus you create with Barber can be controlled
+      with Shortcuts app in macOS. You can compose your own Shortcuts
+      flow with it and other apps.</p>
+      <p>For example, you can display information from Weather app in
+      the menu bar:</p>
+      <p><img src="images/shortcuts.png" alt="Add menu item (form)" width="1029"/></p>
+      <p>You can use the <strong>key</strong> to find item you’d like to
+      change in Barber’s Shortcuts scripting command as the screenshot
+      above.</p>
+      <h2 id="privacy-policy">Privacy Policy</h2>
+      <p>No data or personal information is collected by this app.</p>
+    </div>
   </body>
 </html>

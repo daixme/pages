@@ -35,3 +35,16 @@ a:hover, a:active {
 	color: #00c;
 	text-decoration: none;
 }
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+#app {
+  max-width: 800px;
+}
+
+img {
+  max-width: 100%;
+}
