@@ -1,29 +1,29 @@
 html {
   margin: 0;
   padding: 0;
+  font-size: 18px;
 }
 
 body {
   font-family: -apple-system, -webkit-system-font, "Helvetica Neue", "Lucida Grande", Helvetica, Arial;
-  font-size: 16px;
 	line-height: 160%;
   margin: 0;
   padding: 2rem;
 }
 
 h1 {
-	margin: 16px 0;
-	font-size: 26px;
+	margin: 2rem 0;
+	font-size: 2rem;
 	color: #000;
 }
 
 h2 {
-	margin: 64px 0 16px;
-	font-size: 22px;
+	margin: 2rem 0 1rem;
+	font-size: 1.33rem;
 }
 
 h3 {
-	font-size: 16px;
+	font-size: 1rem;
 }
 
 a:link, a:visited {
@@ -36,15 +36,38 @@ a:hover, a:active {
 	text-decoration: none;
 }
 
+ul, ol, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 body {
   display: flex;
   justify-content: center;
+}
+
+img {
+  max-width: 100%;
 }
 
 #app {
   max-width: 800px;
 }
 
-img {
-  max-width: 100%;
+header {
+  text-align: center;
+}
+
+header img {
+  width: 200px;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+}
+header nav ul li + li {
+  margin-left: 1rem;
 }
